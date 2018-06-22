@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ajax & JSON
+title: 마션 읽기
 ---
 i has been reading a book.
 book name is the martion.
@@ -10,7 +10,7 @@ that's my considered opinion.
 fucked. 
 six days into what should be the great two months of my life,
 and it's turned into a nightmare.
-I don;t even know who'll read this.
+I don't even know who'll read this.
 
 아무래도 좆됐다. 
 그것이 내가 심사숙고 끝에 내린 결론이다. 
