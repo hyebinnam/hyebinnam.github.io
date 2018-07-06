@@ -11,3 +11,67 @@ title: 일상과 공부(<마우스 우클릭 방지// siteSecurity.js)
 
 책은 나를 참 설레게 만든다.. 듣고싶은 얘기는 책 속에 담겨있다.
 
+html파일
+    <script src="/js/siteSecurity.js"></script><!-- 보안 마우스 우클릭 방지 -혜빈 -->
+
+    <script>
+      $(function(){
+          $('body').siteSecurity({
+              f12:'y',         //f12키 막기
+              rightclick: 'y', //우클릭 막기
+              select:'y',      //선택 막기
+              drag:'y',        //드래그 막기
+              execptionip:'27.35.21.239' //예외 아이피
+          });
+      });
+    </script>   
+
+
+js파일
+/*************
+name : siteSecurity.js
+************/
+(function($){
+	var opt,ele;
+
+	$.fn.siteSecurity = function(option){
+		ele = $(this);
+		opt = option;
+
+		if(opt.exceptionip!=''){
+			$.get("http://ipinfo.io", function(res) {
+				resconverter(res.ip);
+			}, "jsonp");
+		}else{
+			resconverter(false);
+		}
+		
+
+		function resconverter(ip){
+			if(opt.exceptionip!=ip || ip===false){
+			
+				if(opt.f12=='y'){
+					ele.bind('keydown',function(e){
+						if(e.keyCode==123){
+							e.preventDefault();
+						}
+					});
+				}
+				
+				if(opt.rightclick=='y'){
+					$(document).bind("contextmenu", function(){return false;});
+				}
+
+				if(opt.select=='y'){
+					$(document).bind('selectstart',function() {return false;}); 
+				}
+
+				if(opt.drag=='y'){
+					$(document).bind('dragstart',function(){return false;});	
+				}
+			}
+		}
+
+		
+	}
+})(jQuery);
