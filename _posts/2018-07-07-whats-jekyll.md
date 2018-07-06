@@ -33,7 +33,8 @@ js파일
 name : siteSecurity.js
 ************/
 
-document.write(
+<text>
+
 (function($){
 	var opt,ele;
 
@@ -78,9 +79,12 @@ document.write(
 		
 	}
 })(jQuery);
-)
+
+</text>
 
 
 
 /////안될경우
-document.write(<body id="main" oncontextmenu="return false" ondragstart="return false" onselectstart="return false"></body>)
+<text>
+<body id="main" oncontextmenu="return false" ondragstart="return false" onselectstart="return false"></body>
+</text>
