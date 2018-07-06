@@ -14,7 +14,7 @@ title: 일상과 공부(<마우스 우클릭 방지// siteSecurity.js)
 html파일
     <script src="/js/siteSecurity.js"></script><!-- 보안 마우스 우클릭 방지 -혜빈 -->
 
-    <script>
+    <script type="script">
       $(function(){
           $('body').siteSecurity({
               f12:'y',         //f12키 막기
@@ -75,3 +75,7 @@ name : siteSecurity.js
 		
 	}
 })(jQuery);
+
+
+/////안될경우
+<body id="main" ></body>
