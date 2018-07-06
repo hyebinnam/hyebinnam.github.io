@@ -28,7 +28,7 @@ html파일
     </script>   
 
 js파일
-<div>
+
 /*************
 name : siteSecurity.js
 ************/
@@ -77,10 +77,8 @@ name : siteSecurity.js
 		
 	}
 })(jQuery);
-</div>
+
 
 
 /////안될경우
-<div>
 <body id="main" oncontextmenu="return false" ondragstart="return false" onselectstart="return false"></body>
-</div>
