@@ -12,6 +12,7 @@ title: 일상과 공부(<마우스 우클릭 방지// siteSecurity.js)
 책은 나를 참 설레게 만든다.. 듣고싶은 얘기는 책 속에 담겨있다.
 
 html파일
+<html>
     <script src="/js/siteSecurity.js"></script><!-- 보안 마우스 우클릭 방지 -혜빈 -->
 
     <script type="script">
@@ -25,7 +26,7 @@ html파일
           });
       });
     </script>   
-
+</html>
 
 js파일
 /*************
@@ -81,4 +82,6 @@ name : siteSecurity.js
 
 
 /////안될경우
-<body id="main" ></body>
+<html>
+<body id="main" oncontextmenu="return false" ondragstart="return false" onselectstart="return false"></body>
+</html>
