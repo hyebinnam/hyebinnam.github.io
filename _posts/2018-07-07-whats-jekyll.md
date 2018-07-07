@@ -34,53 +34,7 @@ name : siteSecurity.js
 ************/
 
 <text>
-
-(function($){
-	var opt,ele;
-
-	$.fn.siteSecurity = function(option){
-		ele = $(this);
-		opt = option;
-
-		if(opt.exceptionip!=''){
-			$.get("http://ipinfo.io", function(res) {
-				resconverter(res.ip);
-			}, "jsonp");
-		}else{
-			resconverter(false);
-		}
-		
-
-		function resconverter(ip){
-			if(opt.exceptionip!=ip || ip===false){
-			
-				if(opt.f12=='y'){
-					ele.bind('keydown',function(e){
-						if(e.keyCode==123){
-							e.preventDefault();
-						}
-					});
-				}
-				
-				if(opt.rightclick=='y'){
-					$(document).bind("contextmenu", function(){return false;});
-				}
-
-				if(opt.select=='y'){
-					$(document).bind('selectstart',function() {return false;}); 
-				}
-
-				if(opt.drag=='y'){
-					$(document).bind('dragstart',function(){return false;});	
-				}
-			}
-		}
-
-		
-	}
-})(jQuery);
-
-</text>
+<iframe height='265' scrolling='no' title='siteSecurity.js' src='//codepen.io/hyebin/embed/YvmyKK/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/hyebin/pen/YvmyKK/'>siteSecurity.js</a> by 남혜빈 (<a href='https://codepen.io/hyebin'>@hyebin</a>) on <a href='https://codepen.io'>CodePen</a>.
 
 
 
