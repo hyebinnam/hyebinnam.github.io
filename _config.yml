@@ -20,7 +20,7 @@ title                    : "이화랑 ♡ 남혜빈 청첩장"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "남혜빈"
-description              : "An amazing website."
+description              : "저희의 결혼식에 초대합니다."
 url                      : "https://hyebinnam.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
