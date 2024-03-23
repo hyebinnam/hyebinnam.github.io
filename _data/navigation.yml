@@ -1,12 +1,12 @@
 # main links
 main:
-  - title: "MEMU"
+  - title: "초대장"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "시간/장소"
+    url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "마음 전하실 곳"
+    url: /year-archive/
+  - title: "갤러리"
+    url: /collection-archive/
+  - title: "신랑, 신부에게 ☻"
+    url: /sitemap/
