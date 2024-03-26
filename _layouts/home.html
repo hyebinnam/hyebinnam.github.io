@@ -1,8 +1,6 @@
 ---
 layout: splash
 ---
-<div class="page_hero-overlay" style=" background-image: url('https://hyebinnam.github.io/images/banner.jpeg');">
-</div>
 
 
 {{ content }}
@@ -16,7 +14,6 @@ layout: splash
 <br>
 더채플앳청담
 </h2>
-<h3 class="archive__subtitle">Wedding Gallery</h3>
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent posts" }}</h3>
 
@@ -28,11 +25,13 @@ layout: splash
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 
-<div class="entries-{{ entries_layout }}">
+<!--<div class="entries-{{ entries_layout }}">
   {% for post in posts %}
     {% include archive-single.html type=entries_layout %}
   {% endfor %}
-</div>
+</div>-->
+
+<h3 class="archive__subtitle">Wedding Gallery</h3>
 
 <figure class="third">
   
