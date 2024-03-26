@@ -132,18 +132,32 @@ layout: splash
   <section class="guestbook">
     <div class="container">
       <h2>신랑과 신부에게 방명록</h2>
-      <form id="commentForm">
-        <textarea id="comment" rows="4" placeholder="댓글을 입력해주세요"></textarea>
-        <button type="submit">댓글 남기기</button>
-      </form>
-      <!-- 여기에 댓글 목록을 표시할 수 있도록 추가 가능 -->
+      <!-- Disqus 댓글 표시 영역 -->
+      <div id="disqus_thread"></div>
     </div>
   </section>
+  
+  <script>
+    /**
+     *  Disqus 댓글 로딩 함수
+     */
+    var disqus_config = function () {
+      this.page.url = 'URL_오브_체어티클';  // 페이지 URL 설정
+      this.page.identifier = '페이지_고유_식별자'; // 페이지 식별자 설정
+    };
+    (function() {  // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://ihwarang-namhyebin-ceongceobjang.disqus.com/embed.js'; // 디스커스 ID 입력
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  
 
   <script>
     document.getElementById('copyButton').addEventListener('click', function() {
       var accountNumber = document.createElement('textarea');
-      accountNumber.value = '123-456-789012';
+      accountNumber.value = '110-386-686550';
       document.body.appendChild(accountNumber);
       accountNumber.select();
       document.execCommand('copy');
