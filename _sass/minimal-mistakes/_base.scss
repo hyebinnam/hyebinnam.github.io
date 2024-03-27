@@ -79,31 +79,6 @@ h1, h2 {
 
 // 마음 전하실 곳 섹션 스타일
 
-
-.gift {
-  flex-direction: column;
-  align-items: center;
-  gap: 20px !important;
-}
-
-.gift, #gift.container {
-  display: flex;
-  padding: 0 20px;
-}
-
-#gift.container {
-  font-size: 13px;
-  line-height: 1.5;
-  text-align: center;
-  color: #555;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4px;
-  margin: 0;
-  word-break: keep-all;
-}
-
 .u1ym3j2 {
   flex-direction: column;
   width: 100%;
