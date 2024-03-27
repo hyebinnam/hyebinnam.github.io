@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "초대장 ✉"
-    url: "https://hyebinnam.github.io/home#invite"
+    url: "https://hyebinnam.github.io#invite"
   - title: "시간/장소"
     url: "https://hyebinnam.github.io/home#time-location"
   - title: "마음 전하실 곳"
