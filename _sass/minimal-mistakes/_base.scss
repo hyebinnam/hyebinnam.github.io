@@ -123,12 +123,14 @@ h1, h2 {
 /* ----------- default 값 (아래) --------------- */
 
 
+/*
 html {
-  /* sticky footer fix */
+  // sticky footer fix //
   position: relative;
   min-height: 100%;
-}
+}*/
 
+/*
 body {
   margin: 0;
   padding: 0;
@@ -137,7 +139,7 @@ body {
   line-height: 1.5;
 
   &.overflow--hidden {
-    /* when primary navigation is visible, the content in the background won't scroll */
+    // when primary navigation is visible, the content in the background won't scroll //
     overflow: hidden;
   }
 }
@@ -201,7 +203,7 @@ del a {
   color: inherit;
 }
 
-/* reduce orphans and widows when printing */
+// reduce orphans and widows when printing //
 
 p,
 pre,
@@ -216,7 +218,7 @@ fieldset {
   widows: 3;
 }
 
-/* abbreviations */
+// abbreviations //
 
 abbr[title],
 abbr[data-original-title] {
@@ -225,7 +227,7 @@ abbr[data-original-title] {
   border-bottom: 1px dotted $text-color;
 }
 
-/* blockquotes */
+// blockquotes //
 
 blockquote {
   margin: 2em 1em 2em 0;
@@ -244,7 +246,7 @@ blockquote {
   }
 }
 
-/* links */
+// links //
 
 a {
   &:focus {
@@ -261,13 +263,13 @@ a {
   }
 }
 
-/* buttons */
+// buttons //
 
 button:focus {
   @extend %tab-focus;
 }
 
-/* code */
+// code //
 
 tt,
 code,
@@ -278,10 +280,10 @@ pre {
 }
 
 pre {
-  overflow-x: auto; /* add scrollbars to wide code blocks*/
+  overflow-x: auto; // add scrollbars to wide code blocks //
 }
 
-/* horizontal rule */
+// horizontal rule //
 
 hr {
   display: block;
@@ -290,7 +292,7 @@ hr {
   border-top: 1px solid $border-color;
 }
 
-/* lists */
+// lists //
 
 ul li,
 ol li {
@@ -302,11 +304,11 @@ li ol {
   margin-top: 0.5em;
 }
 
-/*
+//
    Media and embeds
-   ========================================================================== */
+   ========================================================================== //
 
-/* Figures and images */
+// Figures and images //
 
 figure {
   display: -webkit-box;
@@ -362,7 +364,7 @@ figure {
   }
 }
 
-/* Figure captions */
+// Figure captions //
 
 figcaption {
   margin-bottom: 0.5em;
@@ -380,7 +382,7 @@ figcaption {
   }
 }
 
-/* Fix IE9 SVG bug */
+// Fix IE9 SVG bug //
 
 svg:not(:root) {
   overflow: hidden;
@@ -401,7 +403,7 @@ svg:not(:root) {
  *      <li><a href="#link-3">Link 3</a></li>
  *    </ul>
  *  </nav>
- */
+ //
 
 nav {
   ul {
@@ -417,7 +419,7 @@ nav {
     text-decoration: none;
   }
 
-  /* override white-space for nested lists */
+  // override white-space for nested lists //
   ul li,
   ol li {
     margin-bottom: 0;
@@ -429,9 +431,9 @@ nav {
   }
 }
 
-/*
+//
    Global animation transition
-   ========================================================================== */
+   ========================================================================== //
 
 b,
 i,
@@ -458,3 +460,4 @@ input[type="submit"],
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+*/
