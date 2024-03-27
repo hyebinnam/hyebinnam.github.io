@@ -86,12 +86,12 @@ h1, h2 {
   gap: 20px !important;
 }
 
-.gift,.container {
+.gift, #gift.container {
   display: flex;
   padding: 0 20px;
 }
 
-#gift .container {
+#gift.container {
   font-size: 13px;
   line-height: 1.5;
   text-align: center;
