@@ -26,6 +26,11 @@ h2 {
   color: #1A512E;
 }
 
+// 공통 스타일
+section {
+  padding: 0 20px;
+}
+
 // Reset 기본 스타일
 body, h1, h2, p, ul, li {
   margin: 0;
