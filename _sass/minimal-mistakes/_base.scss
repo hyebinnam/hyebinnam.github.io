@@ -2,6 +2,11 @@
    BASE ELEMENTS
    ========================================================================== */
 
+// 네비게이션 스타일
+.navicon, .navicon:before, .navicon:after {
+  background: #1A512E !important;
+}
+
 // Reset 기본 스타일
 body, h1, h2, p, ul, li {
   margin: 0;
