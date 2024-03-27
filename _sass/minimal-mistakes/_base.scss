@@ -100,6 +100,85 @@ h1, h2 {
   }
 }
 
+.u1ym3j0 {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px
+}
+
+.u1ym3j0,.u1ym3j1 {
+  display: flex;
+  padding: 0 20px
+}
+
+.u1ym3j1 {
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  color: #555;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  word-break: keep-all
+}
+
+.u1ym3j2 {
+  flex-direction: column;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden
+}
+
+.u1ym3j2,.u1ym3j3 {
+  display: flex;
+  margin: 0
+}
+
+.u1ym3j3 {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #ffbe98;
+  padding: 8px 12px;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between
+}
+
+.u1ym3j4 {
+  margin: 0;
+  border: 2px solid #ffbe98;
+  border-top: none;
+  padding: 8px 12px
+}
+
+.u1ym3j4,.u1ym3j5 {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px
+}
+
+.u1ym3j5 {
+  width: 210px
+}
+
+.u1ym3j6 {
+  background-color: rgba(255,190,152,.3);
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #555;
+  cursor: pointer;
+  font-size: 12px;
+  outline: none
+}
+
 // 갤러리 섹션 스타일
 .gallery {
   .slider {
