@@ -40,4 +40,9 @@
 @import "minimal-mistakes/print";
 
 /* Google font */
-@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Myeongjo&display=swap')
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

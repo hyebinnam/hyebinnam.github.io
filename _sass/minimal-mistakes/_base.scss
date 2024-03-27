@@ -1,6 +1,13 @@
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
+   
+   @font-face {
+    font-family: 'MyCustomFont';
+    src: url('/path/to/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 // 네비게이션 스타일
 .navicon, .navicon:before, .navicon:after {
@@ -478,3 +485,4 @@ input[type="submit"],
   transition: $global-transition;
 }
 */
+
