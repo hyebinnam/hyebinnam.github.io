@@ -1,12 +1,12 @@
 # main links
 main:
   - title: "초대장 ✉"
-    url: #https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: "https://hyebinnam.github.io/home#invite"
   - title: "시간/장소"
-    url: #https://mmistakes.github.io/minimal-mistakes/about/
+    url: "https://hyebinnam.github.io/home#time-location"
   - title: "마음 전하실 곳"
-    url: #/year-archive/
+    url: "https://hyebinnam.github.io/home#gift"
   - title: "갤러리"
-    url: #/collection-archive/
+    url: "https://hyebinnam.github.io/home#gallery"
   - title: "신랑, 신부에게 ☻"
-    url: /dear/
+    url: "https://hyebinnam.github.io/home#guestbook"
