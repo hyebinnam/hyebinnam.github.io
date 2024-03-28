@@ -104,6 +104,10 @@ h1, h2 {
 
 .tab-content {
   display: none;
+  margin: 0;
+  border: 2px solid rgba(26, 81, 46, 0.3);
+  border-top: none;
+  padding: 8px 12px;
 }
 
 .tab-content.active {
