@@ -247,56 +247,11 @@ layout: splash
     <div class="container">
       <h2>신랑, 신부에게 ☻</h2>
       <!-- Disqus 댓글 표시 영역 -->
-      <!-- <div id="disqus_thread"></div>-->
-      <form id="commentForm">
-        <textarea id="comment" rows="4" placeholder="댓글을 입력해주세요"></textarea>
-        <button type="submit">댓글 남기기</button>
-      </form>
-      <ul id="commentList">
-        <!-- 여기에 댓글이 동적으로 추가됩니다 -->
-      </ul>
+      <div id="disqus_thread"></div>
     </div>
   </section>
 
-<!-- 댓글 수동 추가 기능 -->
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const commentForm = document.getElementById("commentForm");
-    const commentTextarea = document.getElementById("comment");
-    const commentList = document.getElementById("commentList");
-  
-    commentForm.addEventListener("submit", function(event) {
-      event.preventDefault();
-      const commentContent = commentTextarea.value;
-      if (commentContent.trim() === "") {
-        alert("댓글을 입력해주세요.");
-        return;
-      }
-      addComment(commentContent);
-      commentTextarea.value = "";
-    });
-  
-    commentList.addEventListener("click", function(event) {
-      if (event.target.classList.contains("delete-button")) {
-        event.target.parentElement.remove();
-      }
-    });
-  
-    function addComment(commentContent) {
-      const commentItem = document.createElement("li");
-      commentItem.classList.add("comment-item");
-      commentItem.innerHTML = `
-        ${commentContent}
-        <span class="delete-button">삭제</span>
-      `;
-      commentList.appendChild(commentItem);
-    }
-  });
-</script>
-  
-
-  <!--
-  <script>
     /**
      *  Disqus 댓글 로딩 함수
      */
@@ -311,17 +266,5 @@ layout: splash
       (d.head || d.body).appendChild(s);
     })();
   </script>
-  -->
 
-  <script>
-    document.getElementById('copyButton').addEventListener('click', function() {
-      var accountNumber = document.createElement('textarea');
-      accountNumber.value = '110-386-686550';
-      document.body.appendChild(accountNumber);
-      accountNumber.select();
-      document.execCommand('copy');
-      document.body.removeChild(accountNumber);
-      alert('계좌번호가 복사되었습니다.');
-    });
-  </script>
 </body>

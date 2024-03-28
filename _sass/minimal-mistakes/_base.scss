@@ -152,44 +152,37 @@ h1, h2 {
 }
 
 // 방명록 섹션 스타일
-
 .guestbook {
-  padding: 50px 0;
-  background-color: #f9f9f9;
+  form {
+    margin-top: 20px;
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
 }
 
-.guestbook h2 {
-  text-align: center;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#comment {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-#commentList {
-  list-style-type: none;
-  padding: 0;
-}
-
-.comment-item {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.delete-button {
-  float: right;
-  color: red;
-  cursor: pointer;
-}
 
 
 /* ----------- default 값 (아래) --------------- */
