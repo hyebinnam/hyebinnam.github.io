@@ -252,6 +252,9 @@ layout: splash
         <textarea id="comment" rows="4" placeholder="댓글을 입력해주세요"></textarea>
         <button type="submit">댓글 남기기</button>
       </form>
+      <ul id="commentList">
+        <!-- 여기에 댓글이 동적으로 추가됩니다 -->
+      </ul>
     </div>
   </section>
 
@@ -260,10 +263,7 @@ layout: splash
   document.addEventListener("DOMContentLoaded", function() {
     const commentForm = document.getElementById("commentForm");
     const commentTextarea = document.getElementById("comment");
-    const commentList = document.createElement("ul");
-    commentList.id = "commentList";
-    const container = document.querySelector(".container");
-    container.appendChild(commentList);
+    const commentList = document.getElementById("commentList");
   
     commentForm.addEventListener("submit", function(event) {
       event.preventDefault();
@@ -283,7 +283,7 @@ layout: splash
     }
   });
   </script>
-  
+
   <!--
   <script>
     /**
