@@ -139,7 +139,29 @@ layout: splash
     </div>
   </section>
 
+<!-- 드롭다운 코드 -->
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const brideAccount = document.getElementById("brideAccount");
+      const groomAccount = document.getElementById("groomAccount");
+    
+      brideAccount.addEventListener("click", function() {
+        toggleVisibility("brideAccounts");
+      });
+    
+      groomAccount.addEventListener("click", function() {
+        toggleVisibility("groomAccounts");
+      });
+    
+      function toggleVisibility(className) {
+        const accounts = document.getElementsByClassName(className);
+        for (let i = 0; i < accounts.length; i++) {
+          accounts[i].style.display = (accounts[i].style.display === "none") ? "block" : "none";
+        }
+      }
+    });
+    </script>
 
   <section class="gallery" id="gallery">
     <div class="container">
