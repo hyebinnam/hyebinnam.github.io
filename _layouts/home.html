@@ -110,11 +110,11 @@ layout: splash
           </div>
           <div class="u1ym3j4">
             <div class="u1ym3j5">
-              <span>신한</span><span>110386686550</span><b>남혜빈</b></div><button class="u1ym3j6">복사</button>
+              <span>신한</span><span>110386686550</span><b>남혜빈</b></div><button class="u1ym3j6" id="btn1">복사</button>
             </div>
           <div class="u1ym3j4">
             <div class="u1ym3j5">
-              <span>농협</span><span>3521924988603</span><b>김옥연</b></div><button class="u1ym3j6">복사</button>
+              <span>농협</span><span>3521924988603</span><b>김옥연</b></div><button class="u1ym3j6" id="btn2">복사</button>
           </div>
         </div>
 
@@ -124,20 +124,81 @@ layout: splash
           </div>
           <div class="u1ym3j4">
             <div class="u1ym3j5">
-              <span>신한</span><span>110284244660</span><b>이화랑</b></div><button class="u1ym3j6">복사</button>
+              <span>신한</span><span>110284244660</span><b>이화랑</b></div><button class="u1ym3j6" id="btn3">복사</button>
             </div>
           <div class="u1ym3j4">
             <div class="u1ym3j5">
-              <span>농협</span><span>110284244660</span><b>김미숙</b></div><button class="u1ym3j6">복사</button>
+              <span>농협</span><span>110284244660</span><b>김미숙</b></div><button class="u1ym3j6" id="btn4">복사</button>
           </div>
           <div class="u1ym3j4">
             <div class="u1ym3j5">
-              <span>농협</span><span>110284244660</span><b>이형준</b></div><button class="u1ym3j6">복사</button>
+              <span>농협</span><span>110284244660</span><b>이형준</b></div><button class="u1ym3j6" id="btn5">복사</button>
           </div>
         </div>
 
     </div>
   </section>
+  
+<!-- 계좌 복사 기능 -->
+<script>
+  document.getElementById('btn1').addEventListener('click', function() {
+    var accountNumber = document.createElement('textarea');
+    accountNumber.value = '110-386-686550';
+    document.body.appendChild(accountNumber);
+    accountNumber.select();
+    document.execCommand('copy');
+    document.body.removeChild(accountNumber);
+    alert('계좌번호가 복사되었습니다.');
+  });
+</script>
+
+<script>
+  document.getElementById('btn2').addEventListener('click', function() {
+    var accountNumber = document.createElement('textarea');
+    accountNumber.value = '3521924988603';
+    document.body.appendChild(accountNumber);
+    accountNumber.select();
+    document.execCommand('copy');
+    document.body.removeChild(accountNumber);
+    alert('계좌번호가 복사되었습니다.');
+  });
+</script>
+
+<script>
+  document.getElementById('btn3').addEventListener('click', function() {
+    var accountNumber = document.createElement('textarea');
+    accountNumber.value = '110284244660';
+    document.body.appendChild(accountNumber);
+    accountNumber.select();
+    document.execCommand('copy');
+    document.body.removeChild(accountNumber);
+    alert('계좌번호가 복사되었습니다.');
+  });
+</script>
+
+<script>
+  document.getElementById('btn4').addEventListener('click', function() {
+    var accountNumber = document.createElement('textarea');
+    accountNumber.value = '110284244660';
+    document.body.appendChild(accountNumber);
+    accountNumber.select();
+    document.execCommand('copy');
+    document.body.removeChild(accountNumber);
+    alert('계좌번호가 복사되었습니다.');
+  });
+</script>
+
+<script>
+  document.getElementById('btn5').addEventListener('click', function() {
+    var accountNumber = document.createElement('textarea');
+    accountNumber.value = '110284244660';
+    document.body.appendChild(accountNumber);
+    accountNumber.select();
+    document.execCommand('copy');
+    document.body.removeChild(accountNumber);
+    alert('계좌번호가 복사되었습니다.');
+  });
+</script>
 
 <!-- 드롭다운 코드 -->
 
