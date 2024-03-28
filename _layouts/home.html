@@ -247,10 +247,44 @@ layout: splash
     <div class="container">
       <h2>신랑, 신부에게 ☻</h2>
       <!-- Disqus 댓글 표시 영역 -->
-      <div id="disqus_thread"></div>
+      <!-- <div id="disqus_thread"></div>-->
+      <form id="commentForm">
+        <textarea id="comment" rows="4" placeholder="댓글을 입력해주세요"></textarea>
+        <button type="submit">댓글 남기기</button>
+      </form>
     </div>
   </section>
+
+<!-- 댓글 수동 추가 기능 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const commentForm = document.getElementById("commentForm");
+    const commentTextarea = document.getElementById("comment");
+    const commentList = document.createElement("ul");
+    commentList.id = "commentList";
+    const container = document.querySelector(".container");
+    container.appendChild(commentList);
   
+    commentForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      const commentContent = commentTextarea.value;
+      if (commentContent.trim() === "") {
+        alert("댓글을 입력해주세요.");
+        return;
+      }
+      addComment(commentContent);
+      commentTextarea.value = "";
+    });
+  
+    function addComment(commentContent) {
+      const commentItem = document.createElement("li");
+      commentItem.textContent = commentContent;
+      commentList.appendChild(commentItem);
+    }
+  });
+  </script>
+  
+  <!--
   <script>
     /**
      *  Disqus 댓글 로딩 함수
@@ -266,7 +300,7 @@ layout: splash
       (d.head || d.body).appendChild(s);
     })();
   </script>
-  
+  -->
 
   <script>
     document.getElementById('copyButton').addEventListener('click', function() {
