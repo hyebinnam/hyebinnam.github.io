@@ -86,6 +86,10 @@ h1, h2 {
   background-color: rgba(26, 81, 46, .1);
   cursor: pointer;
   transition: background-color 0.3s;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
   font-size: 14px;
   font-weight: 700;
   padding: 8px 12px;
