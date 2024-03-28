@@ -276,13 +276,24 @@ layout: splash
       commentTextarea.value = "";
     });
   
+    commentList.addEventListener("click", function(event) {
+      if (event.target.classList.contains("delete-button")) {
+        event.target.parentElement.remove();
+      }
+    });
+  
     function addComment(commentContent) {
       const commentItem = document.createElement("li");
-      commentItem.textContent = commentContent;
+      commentItem.classList.add("comment-item");
+      commentItem.innerHTML = `
+        ${commentContent}
+        <span class="delete-button">삭제</span>
+      `;
       commentList.appendChild(commentItem);
     }
   });
-  </script>
+</script>
+  
 
   <!--
   <script>
