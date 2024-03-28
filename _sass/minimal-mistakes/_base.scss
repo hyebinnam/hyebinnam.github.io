@@ -77,6 +77,31 @@ h1, h2 {
   }
 }
 
+.tab-container {
+  display: flex;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab-btn.active {
+  background-color: #ccc;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+
 // 마음 전하실 곳 섹션 스타일
 
 .u1ym3j2 {
