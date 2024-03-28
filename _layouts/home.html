@@ -205,25 +205,16 @@ layout: splash
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      const brideAccount = document.getElementById("brideAccount");
       const groomAccount = document.getElementById("groomAccount");
-    
-      brideAccount.addEventListener("click", function() {
-        toggleVisibility("brideAccounts");
-      });
+      const groomAccountDetails = document.querySelectorAll(".u1ym3j4");
     
       groomAccount.addEventListener("click", function() {
-        toggleVisibility("groomAccounts");
+        groomAccountDetails.forEach(item => {
+          item.style.display = item.style.display === "none" ? "block" : "none";
+        });
       });
-    
-      function toggleVisibility(className) {
-        const accounts = document.getElementsByClassName(className);
-        for (let i = 0; i < accounts.length; i++) {
-          accounts[i].style.display = (accounts[i].style.display === "none") ? "flex" : "none";
-        }
-      }
     });
-    </script>
+  </script>
 
   <section class="gallery" id="gallery">
     <div class="container">
