@@ -82,11 +82,16 @@ h1, h2 {
 }
 
 .tab-btn {
-  padding: 10px 20px;
   border: none;
   background-color: rgba(26, 81, 46, .1);
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 12px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .tab-btn.active {
