@@ -131,6 +131,33 @@ layout: splash
     </div>
   </section>
 
+  <!-- 탭버튼 동작 스크립트 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // 탭 버튼 요소들을 가져옵니다.
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      // 탭 내용 요소들을 가져옵니다.
+      const tabContents = document.querySelectorAll(".tab-content");
+  
+      // 각 탭 버튼에 클릭 이벤트를 추가합니다.
+      tabButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+          // 현재 활성화된 탭 버튼을 비활성화합니다.
+          document.querySelector(".tab-btn.active").classList.remove("active");
+          // 현재 활성화된 탭 내용을 숨깁니다.
+          document.querySelector(".tab-content.active").classList.remove("active");
+          
+          // 클릭된 탭 버튼을 활성화합니다.
+          button.classList.add("active");
+          // 클릭된 탭에 해당하는 탭 내용을 표시합니다.
+          const targetTabId = button.getAttribute("data-tab-id");
+          document.getElementById(targetTabId).classList.add("active");
+        });
+      });
+    });
+  </script>
+  
+
   <section class="gift" id="gift">
     <div class="container">
       <h2>마음 전하실 곳 ❤</h2>
