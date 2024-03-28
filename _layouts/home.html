@@ -138,55 +138,6 @@ layout: splash
     </div>
   </section>
 
-  <!-- 드롭다운 코드 -->
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const brideAccountDropdown = document.getElementById("brideAccountDropdown");
-      const groomAccountDropdown = document.getElementById("groomAccountDropdown");
-    
-      const brideAccounts = [
-        { bank: "신한", accountNumber: "110386686550", name: "남혜빈" },
-        { bank: "농협", accountNumber: "3521924988603", name: "김옥연" }
-      ];
-    
-      const groomAccounts = [
-        { bank: "신한", accountNumber: "110284244660", name: "이화랑" },
-        { bank: "농협", accountNumber: "110284244660", name: "김미숙" },
-        { bank: "농협", accountNumber: "110284244660", name: "이형준" }
-      ];
-    
-      function populateDropdown(dropdown, accounts) {
-        dropdown.innerHTML = ""; // Clear existing options
-        accounts.forEach(account => {
-          const option = document.createElement("option");
-          option.value = account.accountNumber;
-          option.textContent = `${account.bank} - ${account.accountNumber} (${account.name})`;
-          dropdown.appendChild(option);
-        });
-      }
-    
-      brideAccountDropdown.addEventListener("change", function() {
-        const selectedAccount = brideAccounts.find(account => account.accountNumber === this.value);
-        if (selectedAccount) {
-          // Process selected account (e.g., copy account number)
-          console.log(`Selected bride account: ${selectedAccount.accountNumber}`);
-        }
-      });
-    
-      groomAccountDropdown.addEventListener("change", function() {
-        const selectedAccount = groomAccounts.find(account => account.accountNumber === this.value);
-        if (selectedAccount) {
-          // Process selected account (e.g., copy account number)
-          console.log(`Selected groom account: ${selectedAccount.accountNumber}`);
-        }
-      });
-    
-      populateDropdown(brideAccountDropdown, brideAccounts);
-      populateDropdown(groomAccountDropdown, groomAccounts);
-    });
-    </script>
-
   <section class="gallery" id="gallery">
     <div class="container">
       <h2>Wedding Gallery ⟡</h2>
