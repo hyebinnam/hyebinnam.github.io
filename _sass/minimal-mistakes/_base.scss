@@ -2,12 +2,46 @@
    BASE ELEMENTS
    ========================================================================== */
    
-   @font-face {
-    font-family: 'MyCustomFont';
-    src: url('https://hyebinnam.github.io/Cafe24Oneprettynight-v2.0.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+@font-face {
+    font-family: __gowunBatang_ae61dc;
+    src: url(/_next/static/media/40d43ed9bea5d383-s.p.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __gowunBatang_ae61dc;
+    src: url(/_next/static/media/c945dde4c0f435a2-s.p.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __gowunBatang_Fallback_ae61dc;
+    src: local("Arial");
+    ascent-override:117.41%;descent-override:29.15%;line-gap-override:0%;size-adjust:98.8%}
+
+.__className_ae61dc {
+    font-family: __gowunBatang_ae61dc,__gowunBatang_Fallback_ae61dc
+}
+
+.gowun-batang-regular {
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body,html {
+    margin: 0;
+    color: #222;
+    background-color: #eee;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent
+}
+
 
 // 네비게이션 스타일
 .navicon, .navicon:before, .navicon:after {
